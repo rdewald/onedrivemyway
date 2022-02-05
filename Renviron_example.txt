@@ -1,0 +1,3 @@
+# Microsoft 365 personal token
+# note: this is not a real token below, it will be hex
+microsoft365r_use_cli_app_id = abefc027egabb67a
