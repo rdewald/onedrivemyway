@@ -8,6 +8,10 @@ In brief, one generates an authentication token for the personal oneDrive accoun
 
 Take note, I was also able to install these on a remote server (hosting [RStudio Workbench Server Pro](https://www.rstudio.com/products/rstudio/#rstudio-server) in my use-case) without using a GUI for the purposes of enabling oneDrive business accounts as well.
 
+## What to expect
+
+When you run the get_personal_onedrive() function the first time, it will either call [httpuv](https://github.com/rstudio/httpuv) (if you're using RStudio Workbench, for example) to get you to authenticate with your system web browser, or, if httpuv is not present, or you're doing this over a CLI, it will drop to the "device code" method (one can pre-select this method with with get_onedrive_personal(auth_type= "device_code")) and give you a TEXT string to enter into any web browser that is authorized on the personal oneDrive account (like your cell phone) much like authorizing a TV streaming application or similar.
+
 Good luck!
 
 ## Helpful Linkage
