@@ -10,9 +10,9 @@ In brief, one generates an authentication token for the personal oneDrive accoun
 
 ## What to expect
 
-When you run the get_personal_onedrive() function the first time, it will either call [httpuv](https://github.com/rstudio/httpuv) (if you're using RStudio Workbench, for example) to get you to authenticate with your system web browser. 
+When you run the get_personal_onedrive() function the first time, it will either call [httpuv](https://github.com/rstudio/httpuv) (if you're using RStudio Workbench, for example) or give you a URL to target for authentication to your personal Google account using system web browser. 
 
-If httpuv is not present (or you're doing this over a CLI) it will drop to the "device code" method (one can pre-select this method with with get_onedrive_personal(auth_type= "device_code")) and give you a TEXT string to enter into any web browser that is authorized on the personal oneDrive account (like your cell phone) much like authorizing a TV streaming application or similar.
+* That is, if httpuv is not present (or you're doing this over a CLI) it will drop to the "device code" method (one can also pre-select this method with with get_onedrive_personal(auth_type= "device_code")).  You will find a string to enter into any web browser authorized on the personal oneDrive account.
 
 Good luck!
 
