@@ -1,3 +1,10 @@
 # Microsoft 365 personal token
-# note: this is not a real token below, it will be hex
-microsoft365r_use_cli_app_id = abefc027egabb67a
+# note: this is not a real token below, real ones are hexadecimal
+microsoft365r_use_cli_app_id = abcdefg027ega67a
+# OneDrive My Way session file variables
+#   NB: do not add the trailing slash
+# relative path to the staging folder
+ODMW_dest = stash_this
+# path to the oneDrive destination folder
+ODMW_dest = work_stuff
+
