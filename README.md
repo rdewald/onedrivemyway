@@ -4,7 +4,7 @@ This repository is code I used to manage syncing a Windows 10 folder with a pers
 
 This is useful when using a computer restricted according to Windows security policies to disable adding personal oneDrive accounts to the native Windows 10 synchronization application (a common configuration for work computers).
 
-Take note that the aforementioned business Windows security policy must [authorize the underlying Azure libraries](https://github.com/Azure/Microsoft365R/blob/master/inst/app_registration.md) to get this to work at all, but it is common to find these libraries authorized (for other reasons), even in highly secure business environments.  Some [Azure features](https://azure.microsoft.com/en-us/services/graph-data-connect/) rely on these libraries also.
+Take note that the aforementioned business Windows security policy must [authorize the underlying Microsoft Graph API](https://github.com/Azure/Microsoft365R/blob/master/inst/app_registration.md) to get this to work at all, but it is common to find these libraries authorized (for other reasons), even in highly secure business environments.  Fortunately, some key [Azure features](https://azure.microsoft.com/en-us/services/graph-data-connect/) rely on this this API also.
 
 In brief, one generates an authentication token for the personal oneDrive account and declares it during an R session using .Renviron (see Renviron_example.txt).  Once the session closes, the token is no longer available.  Be advised that this method depends upon node.js (linked below) and the Microsoft Office 365 Command-Line Interface being installed on the workstation in use.  
 
