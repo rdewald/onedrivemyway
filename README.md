@@ -14,6 +14,10 @@ When you run the get_personal_onedrive() function the first time, it will either
 
 Good luck!
 
+## .Renviron_example.txt
+
+Paste in your CLI key and save this as .Renviron to do this like I do.
+
 ## Helpful Linkage
 
 [About Microsoft365R](https://blog.revolutionanalytics.com/2021/02/microsoft365r.html)

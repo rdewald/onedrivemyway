@@ -1,10 +1,11 @@
 # Microsoft 365 personal token
 # note: this is not a real token below, real ones are hexadecimal
+# but microsoft365r_use_cli_app_id = is the right variable
 microsoft365r_use_cli_app_id = abcdefg027ega67a
 # OneDrive My Way session file variables
 #   NB: do not add the trailing slash
 # relative path to the staging folder
-ODMW_dest = stash_this
+ODMW_staging = stash_this
 # path to the oneDrive destination folder
 ODMW_dest = work_stuff
 
