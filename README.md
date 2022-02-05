@@ -6,7 +6,9 @@ Take note that the security policy will have to [authorize the underlying Azure 
 
 In brief, one generates an authentication token for the personal oneDrive account and declares it during an R session using .Renviron (see Renviron_example.txt).  Once the session closes, the token is no longer available.
 
-Be advised that this method depends upon node.js (linked below) and the Microsoft Office 365 Command-Line Interface.  I chose to install these on a remote server without using a GUI.
+Be advised that this method depends upon node.js (linked below) and the Microsoft Office 365 Command-Line Interface.  I was able to install these on a remote server (hosting [RStudio Workbench Server Pro](https://www.rstudio.com/products/rstudio/#rstudio-server) in my use-case) without using a GUI.
+
+Good luck!
 
 ## Helpful Linkage
 
