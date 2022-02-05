@@ -14,6 +14,16 @@ When you run the get_personal_onedrive() function the first time, it will either
 
 * That is, if httpuv is not present (or you're doing this over a CLI) it will drop to the "device code" method (one can also pre-select this method with with get_onedrive_personal(auth_type= "device_code")).  You will find a string to enter into any web browser authorized on the personal oneDrive account.
 
+When the authorization with the personal Microsoft account is successful, your CLI key will be printed to your R console.  This is what goes in the .Renviron configuration.
+
+# rdewald.R
+
+My workflow
+
+* copy upload target files to child folder declared in .Renviron.  
+* source(rdewald.R)
+* delete upload target files (this is a one-way sync)
+
 Good luck!
 
 ## .Renviron_example.txt
